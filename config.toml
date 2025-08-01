@@ -1,9 +1,9 @@
 # The URL the site will be built for
-base_url = "https://diogotc.com"
+base_url = "https://rajnikantdhardwivedi.com"
 
 # The site title and description; used in feeds by default.
-title = "Diogo Correia"
-description = "Hey, I'm Diogo Torres Correia from Portugal. I love programming, running, taking photos and learning new things!"
+title = "Rajnikant Dhar Dwivedi"
+description = "Hey, I'm Rajnikant Dhar Dwivedi from India. I love programming, Cyber Security, taking photos and learning new things!"
 
 # The default language; used in feeds.
 default_language = "en"
@@ -15,7 +15,7 @@ compile_sass = true
 build_search_index = true
 
 # The default author for pages
-author = "Diogo Correia"
+author = "Rajnikant Dhar Dwivedi"
 
 # The taxonomies to be rendered for the site and their configuration of the default languages
 taxonomies = [
@@ -50,41 +50,35 @@ external_links_no_follow = true
 external_links_no_referrer = true
 
 # Whether smart punctuation is enabled (changing quotes, dashes, dots in their typographic form)
-# For example, `...` into `…`, `"quote"` into `“curly”` etc
+# For example, `...` into `…`, `"quote"` into `"curly"` etc
 smart_punctuation = true
 
 [extra]
-long_title = "Diogo Torres Correia"
+long_title = "Rajnikant Dhar Dwivedi"
 favicon = "/assets/images/profile.jpg"
 
 [extra.footer]
-source_code = "https://github.com/diogotcorreia/dtc-website"
 
 [[extra.footer.socials]]
 name = "mail"
 label = "Email"
-value = "me@diogotc.com"
-link = "mailto:me@diogotc.com"
+value = "rajnikantdhardwivedi@gmail.com"
+link = "mailto:rajnikantdhardwivedi@gmail.com"
 [[extra.footer.socials]]
-name = "discord"
-label = "Discord"
-value = "diogocorreia"
-link = "https://discord.com/users/218721510649626635"
+name = "github"
+label = "GitHub"
+value = "rajnikantdhardwivedi7"
+link = "https://github.com/rajnikantdhardwivedi7"
 [[extra.footer.socials]]
-name = "matrix"
-label = "Matrix"
-value = "@dtc:diogotc.com"
-link = "https://matrix.to/#/@dtc:diogotc.com"
-[[extra.footer.socials]]
-name = "mastodon"
-label = "Mastodon"
-value = "@dtc@masto.pt"
-link = "https://masto.pt/@dtc"
+name = "instagram"
+label = "Instagram"
+value = "@rajnikantdhardwivedii"
+link = "https://www.instagram.com/rajnikantdhardwivedii/"
 [[extra.footer.socials]]
 name = "gpg"
 label = "GPG Key"
-value = "0x12CF31FDFF172B77"
-link = "https://gpg.diogotc.com"
+value = "7C155482814E95C40A2F22D508E0A28613551790"
+link = "https://keys.openpgp.org/vks/v1/by-fingerprint/7C155482814E95C40A2F22D508E0A28613551790"
 
 [[extra.links]]
 name = "Home"
@@ -97,4 +91,4 @@ name = "Impossible List"
 path = "/impossiblelist"
 [[extra.links]]
 name = "CV"
-path = "https://cv.diogotc.com"
+path = "#"

@@ -7,319 +7,143 @@ template = "impossiblelist.html"
 name = "Technology Goals"
 
   [[extra.categories.goals]]
-  name = "Install Arch Linux"
-  completed_date = "2021-01-22"
-  link = "https://github.com/diogotcorreia/dotfiles/tree/master"
-
+  name = "Build a successful startup"
+  
   [[extra.categories.goals]]
-  name = "Install NixOS"
-  completed_date = "2023-01-27"
-  link = "https://github.com/diogotcorreia/dotfiles/tree/nixos"
-
+  name = "Contribute to major open-source projects"
+  
   [[extra.categories.goals]]
-  name = "Implement CI/CD on a big project"
-
+  name = "Develop a mobile app with 10k+ downloads"
+  
   [[extra.categories.goals]]
-  name = "Ship an Electron App"
-  completed_date = "2020-09-07"
-  link = "https://github.com/livraria-papelaria-espaco/faturas-mega-to-keyboard/"
-
+  name = "Master cloud architecture (AWS/Azure/GCP)"
+  
   [[extra.categories.goals]]
-  name = "Code a mobile app with React Native"
-
+  name = "Learn Rust and build production applications"
+  
+  [[extra.categories.goals]]
+  name = "Create a cybersecurity tool"
+  
+  [[extra.categories.goals]]
+  name = "Build an AI/ML application"
+  
   [[extra.categories.goals]]
   name = "Contribute to the Linux Kernel"
 
-  [[extra.categories.goals]]
-  name = "Contribute to a Linux Mobile project"
+[[extra.categories]]
+name = "Education Goals"
 
   [[extra.categories.goals]]
-  name = "Contribute to an Android Custom ROM"
+  name = "Complete BCA degree"
+  target_date = "2027"
+  
+  [[extra.categories.goals]]
+  name = "Get AWS/Azure/GCP certifications"
+  
+  [[extra.categories.goals]]
+  name = "Complete advanced cybersecurity courses"
+  
+  [[extra.categories.goals]]
+  name = "Learn advanced DevOps practices"
+  
+  [[extra.categories.goals]]
+  name = "Master data structures and algorithms"
 
 [[extra.categories]]
-name = "Health/Sports Goals"
+name = "Career Goals"
 
   [[extra.categories.goals]]
-  name = "Run 5km"
-  time_subgoals = [ 1_170, 1_140 ]
-
-    [[extra.categories.goals.time_log]]
-    date = "2018-06-16"
-    link = "https://www.strava.com/activities/1642991406"
-    value = 1_199
-
-    [[extra.categories.goals.time_log]]
-    date = "2018-12-31"
-    link = "https://www.strava.com/activities/2047123379"
-    value = 1_153
-
-    [[extra.categories.goals.time_log]]
-    date = "2019-06-15"
-    link = "https://www.strava.com/activities/2453062151"
-    value = 1_098
-
+  name = "Work at a top tech company"
+  
   [[extra.categories.goals]]
-  name = "Run 8km"
-  time_subgoals = [ 2_100, 1_980, 1_800 ]
-
-    [[extra.categories.goals.time_log]]
-    date = "2017-11-22"
-    link = "https://www.strava.com/activities/1286410384"
-    value = 2_166
-
-    [[extra.categories.goals.time_log]]
-    date = "2018-06-11"
-    link = "https://www.strava.com/activities/1632347862"
-    value = 1_984
-
-    [[extra.categories.goals.time_log]]
-    date = "2018-12-31"
-    link = "https://www.strava.com/activities/2047123379"
-    value = 1_916
-
-    [[extra.categories.goals.time_log]]
-    date = "2020-01-11"
-    link = "https://www.strava.com/activities/3001812867"
-    value = 1_820
-
+  name = "Lead a development team"
+  
   [[extra.categories.goals]]
-  name = "Run 10km"
-  time_subgoals = [ 2_700, 2_580, 2_400, 2_220 ]
-
-    [[extra.categories.goals.time_log]]
-    date = "2017-12-30"
-    link = "https://www.strava.com/activities/1333511589"
-    value = 2_696
-
-    [[extra.categories.goals.time_log]]
-    date = "2018-09-12"
-    link = "https://www.strava.com/activities/1837353064"
-    value = 2_622
-
-    [[extra.categories.goals.time_log]]
-    date = "2018-09-23"
-    link = "https://www.strava.com/activities/1860126148"
-    value = 2_576
-
-    [[extra.categories.goals.time_log]]
-    date = "2018-12-31"
-    link = "https://www.strava.com/activities/2047123379"
-    value = 2_331
-
-    [[extra.categories.goals.time_log]]
-    date = "2019-09-22"
-    link = "https://www.strava.com/activities/2730140392"
-    value = 2_318
-
-    [[extra.categories.goals.time_log]]
-    date = "2020-01-11"
-    link = "https://www.strava.com/activities/3001812867"
-    value = 2_302
-
+  name = "Become a technical architect"
+  
   [[extra.categories.goals]]
-  name = "Run 15km"
-  time_subgoals = [ 3_600 ]
-
-    [[extra.categories.goals.time_log]]
-    date = "2024-09-07"
-    link = "https://www.strava.com/activities/12350607900"
-    value = 3_831
-
+  name = "Start my own tech company"
+  
   [[extra.categories.goals]]
-  name = "Run 21km (half marathon)"
-  time_subgoals = [ 5_400 ]
-
-    [[extra.categories.goals.time_log]]
-    date = "2024-09-07"
-    link = "https://www.strava.com/activities/12350607900"
-    value = 5_686
-
-  [[extra.categories.goals]]
-  name = "Run 42km (marathon)"
-
-  [[extra.categories.goals]]
-  name = "Do a super sprint triathlon [300m swim / 10km bike / 2.5km run]"
-
-    [[extra.categories.goals.time_log]]
-    date = "2017-07-16"
-    value = 3_508
-
-  [[extra.categories.goals]]
-  name = "Do a sprint triathlon [700m swim / 20km bike / 5km run]"
-  time_subgoals = [ 6_000, 4_200 ]
-
-    [[extra.categories.goals.time_log]]
-    date = "2018-05-27"
-    value = 4_708
-    triathlon_links = [
-      "https://www.strava.com/activities/1599033223",
-      "https://www.strava.com/activities/1599033195",
-      "https://www.strava.com/activities/1599033199"
-    ]
-
-  [[extra.categories.goals]]
-  name = "Do a standard triathlon [1.5km swim / 40km bike / 10km run]"
-
-  [[extra.categories.goals]]
-  name = "Run 200m"
-  time_subgoals = [ 30, 29, 28 ]
-
-    [[extra.categories.goals.time_log]]
-    date = "2018-04-19"
-    value = 29.9
-
-    [[extra.categories.goals.time_log]]
-    date = "2019-11-28"
-    value = 28.1
-
-  [[extra.categories.goals]]
-  name = "Run 300m"
-  time_subgoals = [ 50, 48, 47 ]
-
-    [[extra.categories.goals.time_log]]
-    date = "2018-04-12"
-    value = 48.8
-
-    [[extra.categories.goals.time_log]]
-    date = "2019-11-21"
-    value = 47.9
-
-  [[extra.categories.goals]]
-  name = "Run 400m"
-  time_subgoals = [ 70, 65, 60 ]
-
-    [[extra.categories.goals.time_log]]
-    date = "2018-04-17"
-    value = 66.7
-
-    [[extra.categories.goals.time_log]]
-    date = "2023-04-07"
-    value = 63.8
-    link = "https://www.strava.com/activities/8844006830"
-
-  [[extra.categories.goals]]
-  name = "Run 500m"
-  time_subgoals = [ 95, 90, 85 ]
-
-    [[extra.categories.goals.time_log]]
-    date = "2018-09-25"
-    value = 90.3
-
-    [[extra.categories.goals.time_log]]
-    date = "2018-12-08"
-    value = 87.9
-
-    [[extra.categories.goals.time_log]]
-    date = "2020-01-02"
-    value = 86.5
-
-  [[extra.categories.goals]]
-  name = "Run 1000m"
-  time_subgoals = [ 200, 180 ]
-
-    [[extra.categories.goals.time_log]]
-    date = "2018-04-06"
-    value = 204.7
-
-    [[extra.categories.goals.time_log]]
-    date = "2018-04-28"
-    value = 192.8
-    link = "https://www.strava.com/activities/1537199162"
-
-    [[extra.categories.goals.time_log]]
-    date = "2018-12-08"
-    value = 186.6
-
-    [[extra.categories.goals.time_log]]
-    date = "2019-04-28"
-    value = 182.07
-    link = "https://www.strava.com/activities/2326918389"
-
-    [[extra.categories.goals.time_log]]
-    date = "2020-11-12"
-    value = 179.3
-    link = "https://www.strava.com/activities/4328742407"
+  name = "Become a cybersecurity expert"
 
 [[extra.categories]]
-name = "Events to Attend"
+name = "Hackathon Goals"
 
   [[extra.categories.goals]]
-  name = "Web Summit"
-  completed_date = "2021-11-02"
-
+  name = "Win a major hackathon"
+  
   [[extra.categories.goals]]
-  name = "Lisbon Games Week"
-  completed_date = "2014-11-09"
+  name = "Participate in 10+ hackathons"
+  
+  [[extra.categories.goals]]
+  name = "Organize a hackathon"
+  
+  [[extra.categories.goals]]
+  name = "Mentor at hackathons"
 
 [[extra.categories]]
-name = "Gaming Goals"
+name = "Open Source Goals"
 
   [[extra.categories.goals]]
-  name = "Reach gold rank on CS:GO"
-  completed_date = "2018-12-20"
-
+  name = "Have 100+ GitHub stars on a project"
+  
   [[extra.categories.goals]]
-  name = "Reach level 100 on Robocraft"
-  completed_date = "2018-09-06"
+  name = "Contribute to 50+ open source projects"
+  
+  [[extra.categories.goals]]
+  name = "Create a popular open source library"
+  
+  [[extra.categories.goals]]
+  name = "Become a maintainer of a major project"
 
 [[extra.categories]]
-name = "Traveling"
+name = "Personal Development"
 
   [[extra.categories.goals]]
-  name = "Visit Paris, France"
-  completed_custom_date = "Easter 2016"
-
+  name = "Write 100+ technical blog posts"
+  
   [[extra.categories.goals]]
-  name = "Visit Amsterdam, Netherlands"
-  completed_custom_date = "Summer 2016"
-
+  name = "Speak at a tech conference"
+  
   [[extra.categories.goals]]
-  name = "Visit Saint Petersburg, Russia"
-  completed_custom_date = "Summer 2018"
-
+  name = "Create online courses"
+  
   [[extra.categories.goals]]
-  name = "Visit Moscow, Russia"
-  completed_custom_date = "Summer 2018"
-
+  name = "Build a personal brand in tech"
+  
   [[extra.categories.goals]]
-  name = "Visit London, England"
-
-  [[extra.categories.goals]]
-  name = "Visit New York City, USA"
-
-  [[extra.categories.goals]]
-  name = "Visit Los Angeles, USA"
-
-  [[extra.categories.goals]]
-  name = "Visit Stockholm, Sweden"
-  completed_custom_date = "August 2023"
-
-  [[extra.categories.goals]]
-  name = "Obtain dual citizenship with another country"
-
-  [[extra.categories.goals]]
-  name = "See the Northern Lights"
-  completed_date = "2024-11-03"
+  name = "Mentor 10+ junior developers"
 
 [[extra.categories]]
-name = "Life goals & Misc"
+name = "Travel Goals"
 
   [[extra.categories.goals]]
-  name = "Own a house"
+  name = "Visit Silicon Valley"
+  
+  [[extra.categories.goals]]
+  name = "Attend major tech conferences"
+  
+  [[extra.categories.goals]]
+  name = "Visit tech hubs around the world"
+  
+  [[extra.categories.goals]]
+  name = "Work remotely from different countries"
+
+[[extra.categories]]
+name = "Life Goals"
 
   [[extra.categories.goals]]
-  name = "Own a car"
-
+  name = "Have a positive impact on the tech community"
+  
   [[extra.categories.goals]]
-  name = "Get something named after me"
-
+  name = "Help others learn programming"
+  
   [[extra.categories.goals]]
-  name = "Have a positive impact in the world"
-
+  name = "Build sustainable technology solutions"
+  
   [[extra.categories.goals]]
-  name = "Start a blog"
-  completed_date = "2023-12-12"
-  link = "https://diogotc.com/blog/"
+  name = "Create opportunities for others in tech"
 
 +++
 

@@ -1,16 +1,42 @@
-# Diogo Correia's Personal Website
+# Rajnikant Dhar Dwivedi's Personal Website
 
-![Website Screenshot](https://github.com/diogotcorreia/dtc-website/blob/master/.gh/site_screenshot.png?raw=true)
+![Website Screenshot](https://github.com/rajnikantdhardwivedi7/portfolio-website/blob/master/.gh/site_screenshot.png?raw=true)
 
-You can find a live version at [diogotc.com](https://diogotc.com).
+This is my personal portfolio website built with Zola.
 
-## Frameworks and packages used
+You can find a live version at [rajnikantdhardwivedi.com](https://rajnikantdhardwivedi.com).
 
-- [Zola](https://getzola.org/)
-- [tsparticles](https://github.com/matteobruni/tsparticles)
-- ... and more!
+## Features
+
+- **Modern Design**: Clean and responsive design
+- **Fast**: Built with Zola for optimal performance
+- **Accessible**: Follows web accessibility guidelines
+- **SEO Optimized**: Proper meta tags and structured data
+- **Blog**: Built-in blog functionality
+- **Projects Showcase**: Highlight your best work
+- **Timeline**: Show your journey and achievements
+
+## Tech Stack
+
+- **Static Site Generator**: Zola
+- **Styling**: SCSS with custom design system
+- **Deployment**: Netlify
+- **Analytics**: Privacy-focused analytics (optional)
+
+## Getting Started
+
+1. Clone the repository
+2. Install Zola: `curl -sSL https://get.zola.rs | sh`
+3. Run the development server: `zola serve`
+4. Build for production: `zola build`
+
+## Customization
+
+- Update `content/_index.md` for your personal information
+- Modify `config.toml` for site configuration
+- Edit SCSS files in `sass/` for styling
+- Add your projects and timeline in the content files
 
 ## License
 
-The code of this website is licensed under the [MIT license](./LICENSE), while
-the content is licensed under [CC-BY-NC-SA-4.0](./content/LICENSE).
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

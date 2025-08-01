@@ -55,29 +55,12 @@
       </div>
       <div class="copyright">
         <div class="container">
-          <p class="copyright-text">&copy; 2017-{{ now() | date(format="%Y") }} Diogo Torres Correia</p>
-          <p>
-            <a
-              href="{{ config.extra.footer.source_code }}"
-              target="_blank"
-              rel="noopener"
-              data-umami-event="source-code-footer"
-            >
-              Website Source Code
-            </a>
-          </p>
+          <p class="copyright-text">&copy; 2017-{{ now() | date(format="%Y") }} Rajnikant Dhar Dwivedi</p>
         </div>
       </div>
     </footer>
     {%- block scripts %}
     {{- macros_navbar::navbar_script() }}
-    <script
-      async
-      defer
-      data-website-id="25c8aedf-a960-4b55-8c70-7bc4b2ad587b"
-      src="https://umami.diogotc.com/hellothere.js"
-      data-domains="diogotc.com,www.diogotc.com"
-    ></script>
     {%- endblock scripts %}
   </body>
 </html>
