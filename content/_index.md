@@ -279,7 +279,7 @@ icon = "/assets/icons/resumos-leic.svg"
 background = "#434343"
 foreground = "#fff"
 content = """
-I built Resumos LEIC, a completely open source website dedicated to the creation
+I built Insight for Tomorrow, a completely open source website dedicated to the creation
 of class notes focused on computer science courses. The platform helps improve
 academic performance of students through collaborative knowledge sharing.
 """
