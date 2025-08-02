@@ -91,4 +91,4 @@ name = "Impossible List"
 path = "/impossiblelist"
 [[extra.links]]
 name = "CV"
-path = "#"
+path = "https://cv-ten-weld.vercel.app/"
