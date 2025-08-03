@@ -87,7 +87,6 @@ The combination of capital constraints, compute deficits, and an advanced talent
 
 The "Free PoC Purgatory" and slow enterprise adoption indicate a market maturity issue and a risk-averse corporate culture that hinders rapid iteration and revenue generation for deep-tech startups. This suggests a disconnect between strategic intent and practical adoption, slowing down product-market fit and starving startups of crucial early revenue, making it difficult to build sustainable, scalable businesses. The Indian market, while large, may not yet be mature enough or sufficiently risk-tolerant to rapidly commercialize and scale deep-tech AI innovations.
 
-\<br\>
 
 | Challenge | Supporting Data |Strategic Solution |
 | :--- | :--- |:--- |
@@ -97,7 +96,6 @@ The "Free PoC Purgatory" and slow enterprise adoption indicate a market maturity
 | Policy Implementation & IP Gaps | Policy not providing tangible deep-tech benefits [6], India 5th in GenAI patent filings.[6] | Robust Policy & Governance: Develop clear, supportive regulations and IP frameworks. |
 | Market Readiness & Slow Enterprise Adoption | Fragmented market, risk-averse procurement, cultural resistance [6], "pivot or perish" dilemma.[13] | Industry-Academia-Government Collaboration: Emphasize co-innovation and ecosystem support. |
 
-\<br\>
 
 ## Global AI Giants: Lessons from the US and China
 
@@ -123,7 +121,6 @@ This approach, while highly beneficial for societal impact and inclusive progres
 
 The success factors observed in the US and China—namely, abundant access to chips and compute power, massive data resources, patient capital, strong C-suite commitment to AI governance and implementation, and an enterprise-scale approach from the outset—directly mirror India's identified challenges.[14, 15, 16, 17] This relationship between the success factors of global leaders and the challenges faced by India suggests that the absence of these foundational elements directly hinders India's ability to cultivate AI giants. The "pivot or perish" dilemma faced by Indian startups further underscores the difficulty in achieving the necessary scale and longevity without these fundamental enablers.[13]
 
-\<br\>
 
 | Metric | USA | China | India |
 | :--- | :--- | :--- | :--- |
@@ -135,7 +132,6 @@ The success factors observed in the US and China—namely, abundant access to ch
 | AI PhD Retention Rate (in-country) | 75% [9] | 94% [9] | 50% (brain drain rate 7%) [9] |
 | Engineers pursuing AI PhDs | N/A | 4.2% [9] | 0.08% [9] |
 
-\<br\>
 
 ## Paving the Way Forward: Recommendations for India's AI Ambition
 
