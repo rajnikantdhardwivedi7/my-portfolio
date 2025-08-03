@@ -1,10 +1,10 @@
-\+++
++++
 title = "Why India's AI Landscape, Despite its Boom, Hasn't Yet Produced a Global Giant"
 date = 2025-08-03
 
 [taxonomies]
-tags =
-\+++
+tags = []
++++
 
 Hello\! Welcome to my portfolio website. I'm Rajnikant Dhar Dwivedi, a passionate developer and student from India. This post delves into a critical question for the Indian technology landscape: Why, despite its vast pool of tech talent and a rapidly expanding AI ecosystem, has India not yet produced an AI giant of comparable global stature?
 
