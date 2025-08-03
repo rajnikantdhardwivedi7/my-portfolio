@@ -122,7 +122,7 @@ icon = "/assets/icons/java.svg"
 background = "#007396"
 foreground = "#fff"
 content = """
-At this time, I started to have some interest in coding and joined the Bukkit community.
+At this time, I started to have some interest in coding and joined the [Bukkit](https://bukkit.org/) community,
 This marked the beginning of my journey in software development and open-source contributions.
 """
 
@@ -148,9 +148,9 @@ icon = "/assets/icons/schoolbit.svg"
 background = "#f44336"
 foreground = "#fff"
 content = """
-I started working on an Android app called "SchoolBit" that connected to my school system
-and showed absences, summaries, grades, and other academic information.
-This was my first experience with mobile app development.
+I started working on an Android app called "SchoolBit" (which was then taken
+down due to legal reasons), that basically connected to my school system and
+showed the absences, summaries, grades, etc...
 """
 
 [[extra.timeline]]
@@ -188,9 +188,11 @@ background = "#007396"
 foreground = "#fff"
 content = """
 After PUBGTHON ended, I didn't have anything to do, so I made myself a challenge:
-create a fully working Minecraft server software from scratch.
-The goal? Learn more about how socket connections work in Java.
+create a [fully working Minecraft server software from scratch](https://github.com/Clout-Team/JarCraftinator).  
+**The goal?** Learn more about how socket connections work in Java.
 And after a week I got my first loaded chunk!
+The project is far from finished and it will probably stay that way,
+but it was fun to do nonetheless.
 """
 
 [[extra.timeline]]
@@ -201,7 +203,7 @@ icon = "/assets/icons/python.svg"
 background = "#3776AB"
 foreground = "#fff"
 content = """
-I took several courses at Stanford Online including JavaScript Data Structures and Algorithms,
+I took several courses at [Stanford Online](https://online.stanford.edu/) including JavaScript Data Structures and Algorithms,
 DevOps practices, and advanced programming concepts.
 These courses significantly improved my technical skills and understanding of modern development practices.
 """
@@ -253,8 +255,10 @@ icon = "/assets/icons/translate.svg"
 background = "#008ff8"
 foreground = "#fff"
 content = """
-I developed TWIN (Triton Web Interface), a web interface to configure the Triton plugin.
-It was my first consumer-facing web app made with React and other modern
+In the v1.0.0 update for Triton, my Spigot premium plugin,
+I introduced [TWIN](https://twin.rexcantor64.com/demo),
+a web interface to configure the plugin.
+It was my first consumer-facing web app made with React and other new
 web technologies.
 """
 
@@ -266,7 +270,7 @@ icon = "/assets/icons/account-group.svg"
 background = "#009de0"
 foreground = "#fff"
 content = """
-I worked as a Full Stack Intern at Hexaware Technologies, where I gained valuable
+I worked as a Full Stack Intern at [Hexaware Technologies](https://hexaware.com/), where I gained valuable
 experience in enterprise software development, working with large-scale applications
 and collaborating with professional development teams.
 """
@@ -305,7 +309,7 @@ icon = "/assets/icons/account-group.svg"
 background = "#004791"
 foreground = "#fff"
 content = """
-I worked as a DevOps Intern at Deloitte, where I gained hands-on experience with
+I worked as a DevOps Intern at [Deloitte](https://www.deloitte.com/in/en.html), where I gained hands-on experience with
 cloud infrastructure, CI/CD pipelines, containerization, and automation tools.
 This role helped me understand enterprise-level DevOps practices and cloud architecture.
 """
@@ -318,7 +322,7 @@ icon = "/assets/icons/gamepad-variant.svg"
 background = "#e91425"
 foreground = "#fff"
 content = """
-I was selected as a finalist for HackMIT 2024, one of the most prestigious
+I was selected as a finalist for [HackMIT 2024](https://hackmit.org/), one of the most prestigious
 hackathons in the world. This recognition validates my skills in rapid prototyping
 and innovative problem-solving.
 """
@@ -331,7 +335,7 @@ icon = "/assets/icons/github.svg"
 background = "#36b030"
 foreground = "#fff"
 content = """
-I launched Insight for Tomorrow, a comprehensive data analytics platform that
+I launched Resumos LEIC, a comprehensive data analytics platform that
 provides insights for future planning. The platform helps organizations make
 data-driven decisions with advanced visualization and reporting capabilities.
 """
