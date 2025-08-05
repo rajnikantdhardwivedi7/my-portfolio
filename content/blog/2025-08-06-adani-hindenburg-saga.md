@@ -1,3 +1,9 @@
++++
+title = "The Adani-Hindenburg Saga: An Interactive Infographic"
+description = "A deep dive into the market crash, Operation Zeppelin, and the strategic comeback of the Adani Group."
+date = 2025-08-06
+draft = false
++++
 <!DOCTYPE html>
 <html lang="en">
 <head>
