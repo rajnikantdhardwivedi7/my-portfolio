@@ -4,21 +4,30 @@ description = "A deep dive into the market crash, Operation Zeppelin, and the st
 date = 2025-08-06
 draft = false
 +++
-<!DOCTYPE html>
-<html lang="en">
-<head>
+
+ang="en" class="scroll-smooth">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Adani-Hindenburg Saga: An Interactive Infographic</title>
+    <title>The Adani-Hindenburg Saga: An Interactive Report</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <!-- Chosen Palette: "Corporate Sentinel" - A professional and serious palette with deep navy, accent blues, and a clear red for emphasis. -->
+    <!-- Application Structure Plan: A thematic, single-page scrolling application. The structure is designed for narrative flow: 1. Hero (Initial Shock), 2. The Attack (Allegations), 3. The Fallout (Market Impact), 4. The Counteroffensive (Operation Zeppelin), 5. The Verdict (Resolution & Recovery). This structure guides the user through the complex story logically, from problem to resolution, making it more digestible than the report's original format. A sticky navigation bar allows users to jump between these key narrative points, facilitating non-linear exploration. -->
+    <!-- Visualization & Content Choices: 
+        - Market Cap Data -> Goal: Show Change -> Viz: Line Chart (Chart.js) -> Interaction: Hover tooltips -> Justification: Best for showing trends over time.
+        - Financial Loss/Recovery -> Goal: Compare -> Viz: Bar Chart (Chart.js) -> Interaction: Hover tooltips -> Justification: Clearly compares the magnitude of the initial loss vs. the recovery.
+        - Operation Zeppelin -> Goal: Organize/Show Process -> Viz: HTML/CSS Flowchart -> Interaction: Static visual flow -> Justification: Breaks down a complex, multi-step counter-intelligence operation into a clear, easy-to-follow visual narrative without using prohibited SVG/Mermaid.
+        - Key Allegations/Findings -> Goal: Inform/Organize -> Viz: Interactive Cards/Styled Lists (HTML/CSS) -> Interaction: Click/Hover to reveal details -> Justification: Presents dense information in a clean, uncluttered way, encouraging user engagement.
+    -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #F8F8F8;
+            background-color: #f8fafc; /* slate-50 */
         }
         .chart-container {
             position: relative;
@@ -26,180 +35,181 @@ draft = false
             max-width: 800px;
             margin-left: auto;
             margin-right: auto;
-            height: 300px;
-            max-height: 400px;
+            height: 350px;
+            max-height: 450px;
         }
         @media (min-width: 768px) {
             .chart-container {
                 height: 400px;
             }
         }
-        .flow-chart-node {
-            border: 2px solid #01949A;
-            background-color: white;
-            padding: 1rem;
-            border-radius: 0.5rem;
-            text-align: center;
-            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-            flex-grow: 1;
+        .nav-link {
+            transition: all 0.3s ease;
+            border-bottom: 2px solid transparent;
         }
-        .flow-chart-arrow {
-            font-size: 2rem;
-            color: #DB1F48;
-            align-self: center;
-            margin: 0 1rem;
+        .nav-link:hover, .nav-link.active {
+            color: #2563eb; /* blue-600 */
+            border-bottom-color: #2563eb; /* blue-600 */
         }
-        .timeline-item::before {
+        .flow-step {
+            position: relative;
+            padding-left: 40px;
+            padding-bottom: 2rem;
+        }
+        .flow-step:not(:last-child)::before {
             content: '';
             position: absolute;
-            left: -31px;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 20px;
-            height: 20px;
+            left: 14px;
+            top: 32px;
+            width: 2px;
+            height: calc(100% - 20px);
+            background-color: #94a3b8; /* slate-400 */
+        }
+        .flow-icon {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 30px;
+            height: 30px;
             border-radius: 50%;
-            background-color: #DB1F48;
-            border: 4px solid #004369;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: white;
         }
     </style>
 </head>
-<body class="text-gray-800">
+<body class="text-slate-700">
 
-    <div class="container mx-auto p-4 md:p-8">
-
-        <header class="text-center mb-12">
-            <h1 class="text-4xl md:text-6xl font-black text-[#004369] mb-2">The Adani-Hindenburg Saga</h1>
-            <p class="text-lg md:text-xl text-[#01949A]">Anatomy of a Corporate War: From Market Collapse to Strategic Vindication</p>
-        </header>
-
-        <section id="the-attack" class="mb-16">
-            <div class="bg-white rounded-lg shadow-xl p-8 text-center">
-                <h2 class="text-2xl font-bold text-[#004369] mb-4">The Initial Shockwave</h2>
-                <p class="max-w-3xl mx-auto text-gray-600 mb-6">In January 2023, Hindenburg Research released a report accusing the Adani Group of widespread fraud, triggering a catastrophic market collapse. The report's allegations wiped out an unprecedented amount of wealth in a matter of days.</p>
-                <div class="bg-[#DB1F48] text-white rounded-lg p-8 inline-block">
-                    <p class="text-2xl font-semibold">Market Value Wiped Out</p>
-                    <p class="text-7xl font-black">$150 Billion</p>
-                    <p class="text-xl">(₹10.25 Lakh Crore)</p>
+    <nav id="navbar" class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <h1 class="text-xl font-bold text-[#0B2A4A]">The Adani-Hindenburg Saga</h1>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#attack" class="nav-link font-semibold">The Attack</a>
+                    <a href="#fallout" class="nav-link font-semibold">The Fallout</a>
+                    <a href="#counteroffensive" class="nav-link font-semibold">The Counteroffensive</a>
+                    <a href="#verdict" class="nav-link font-semibold">The Verdict</a>
                 </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto p-4 md:p-8">
+
+        <section id="hero" class="text-center py-16 md:py-24">
+            <h2 class="text-4xl md:text-6xl font-black text-[#0B2A4A] mb-4">A Corporate War</h2>
+            <p class="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto mb-8">An interactive analysis of the high-stakes battle between Adani Group and Hindenburg Research, from a bombshell report to a global counter-intelligence operation.</p>
+            <div class="bg-[#C0392B] text-white rounded-lg p-6 inline-block shadow-lg">
+                <p class="text-2xl font-semibold">Peak Market Value Lost</p>
+                <p class="text-6xl md:text-7xl font-black">$150 Billion</p>
             </div>
         </section>
 
-        <section id="market-fallout" class="mb-16">
-            <div class="bg-white rounded-lg shadow-xl p-6 md:p-8">
-                <h2 class="text-2xl font-bold text-center text-[#004369] mb-2">Market Capitalization Rollercoaster</h2>
-                <p class="text-center text-gray-600 mb-6 max-w-3xl mx-auto">The group's market capitalization plummeted following the report but demonstrated remarkable resilience, staging a significant recovery by mid-2024 through strategic debt management and attracting new investors.</p>
-                <div class="chart-container">
-                    <canvas id="marketCapChart"></canvas>
-                </div>
-            </div>
-        </section>
+        <div class="space-y-24">
 
-        <section id="operation-zeppelin" class="mb-16">
-            <h2 class="text-3xl font-bold text-center text-[#004369] mb-8">Operation Zeppelin: The Counteroffensive</h2>
-            <div class="bg-white rounded-lg shadow-xl p-6 md:p-8">
-                <p class="text-center text-gray-600 mb-8 max-w-4xl mx-auto">In response to the attack, the Adani Group launched "Operation Zeppelin," a sophisticated counter-intelligence operation. This clandestine investigation, reportedly aided by Israeli intelligence, aimed to unmask the network behind Hindenburg.</p>
-                <div class="space-y-8">
-                    <div class="flex flex-col md:flex-row items-center justify-center">
-                        <div class="flow-chart-node">
-                            <h3 class="font-bold text-[#004369]">Hindenburg Report</h3>
-                            <p class="text-sm">Publishes allegations of fraud</p>
-                        </div>
-                        <div class="flow-chart-arrow transform md:rotate-0 rotate-90">→</div>
-                        <div class="flow-chart-node">
-                            <h3 class="font-bold text-[#004369]">Operation Zeppelin Launch</h3>
-                            <p class="text-sm">Covert investigation initiated by Adani Group</p>
-                        </div>
+            <section id="attack">
+                <h3 class="text-3xl font-bold text-center text-[#0B2A4A] mb-2">The Attack</h3>
+                <p class="text-center text-slate-500 mb-12 max-w-2xl mx-auto">On January 24, 2023, Hindenburg Research published a report accusing the Adani Group of systemic fraud, triggering a market firestorm.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h4 class="font-bold text-lg text-[#005A8D] mb-2">Stock Manipulation</h4>
+                        <p>Alleged a "brazen stock manipulation" scheme using a web of offshore shell entities managed by family members to inflate share prices.</p>
                     </div>
-                    <div class="flex justify-center">
-                        <div class="flow-chart-arrow transform rotate-90">↓</div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h4 class="font-bold text-lg text-[#005A8D] mb-2">Accounting Fraud</h4>
+                        <p>Claimed improper use of offshore tax havens and raised red flags on accounting and auditing practices across group companies.</p>
                     </div>
-                    <div class="flow-chart-node max-w-md mx-auto">
-                        <h3 class="font-bold text-[#004369]">Intelligence Gathering</h3>
-                        <p class="text-sm">Alleged Mossad monitoring & infiltration of a premise in Oakbrook Terrace, Illinois, uncovering encrypted communications.</p>
-                    </div>
-                    <div class="flex justify-center">
-                        <div class="flow-chart-arrow transform rotate-90">↓</div>
-                    </div>
-                    <div class="flow-chart-node">
-                        <h3 class="font-bold text-[#004369]">Uncovering a "Complex Web"</h3>
-                        <p class="text-sm">The operation revealed a network of activist lawyers, journalists, hedge funds (like Mark Kingdon's), and political entities (including alleged links to the Indian Overseas Congress) across multiple continents.</p>
-                    </div>
-                     <div class="flex justify-center">
-                        <div class="flow-chart-arrow transform rotate-90">↓</div>
-                    </div>
-                    <div class="flow-chart-node max-w-md mx-auto">
-                        <h3 class="font-bold text-[#004369]">The Zeppelin Dossier</h3>
-                        <p class="text-sm">By October 2024, a 353-page dossier was compiled, detailing the collaborative network allegedly targeting Adani.</p>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h4 class="font-bold text-lg text-[#005A8D] mb-2">Precarious Debt</h4>
+                        <p>Asserted that substantial debt levels, masked by irregular accounting, placed the entire conglomerate on a "precarious financial footing."</p>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section id="turning-tide" class="mb-16">
-            <h2 class="text-3xl font-bold text-center text-[#004369] mb-8">The Legal & Regulatory Turning Point</h2>
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                <div class="bg-white rounded-lg shadow-xl p-6 md:p-8">
-                    <h3 class="text-xl font-bold text-[#004369] mb-4">SEBI's Show-Cause Notice</h3>
-                    <p class="text-gray-600 mb-4">India's market regulator, SEBI, shifted the narrative by issuing a notice to Hindenburg, not Adani. The focus turned from Adani's alleged fraud to Hindenburg's potentially illicit market practices.</p>
-                    <ul class="space-y-3">
-                        <li class="flex items-start"><span class="text-[#DB1F48] font-bold mr-2">✓</span><span>Accused Hindenburg of making "unfair profits" of ₹183.23 Cr ($22.25M).</span></li>
-                        <li class="flex items-start"><span class="text-[#DB1F48] font-bold mr-2">✓</span><span>Charged that Hindenburg shared its report with a hedge fund manager two months before publication.</span></li>
-                        <li class="flex items-start"><span class="text-[#DB1F48] font-bold mr-2">✓</span><span>Alleged use of "non-public" and "misleading" information to induce panic selling.</span></li>
-                    </ul>
-                </div>
-                <div class="bg-[#004369] text-white rounded-lg shadow-xl p-6 md:p-8">
-                    <h3 class="text-xl font-bold mb-4">Indian Supreme Court's Verdict</h3>
-                    <p class="text-gray-200 mb-4">The highest court in India provided a decisive legal victory for the Adani Group, dismissing the core claims of the short-seller's report and affirming confidence in the domestic regulator.</p>
-                    <div class="border-l-4 border-[#DB1F48] pl-4">
-                        <p class="text-2xl italic font-semibold">The Hindenburg report was deemed "unreliable" and aimed at influencing the market through "selective and distorted information."</p>
+            <section id="fallout">
+                <h3 class="text-3xl font-bold text-center text-[#0B2A4A] mb-2">The Fallout</h3>
+                <p class="text-center text-slate-500 mb-12 max-w-2xl mx-auto">The report's impact was immediate and devastating, erasing billions in wealth and forcing Adani to cancel a critical public offering.</p>
+                <div class="bg-white p-6 md:p-8 rounded-lg shadow-xl">
+                    <h4 class="text-xl font-bold text-center text-[#0B2A4A] mb-4">Adani Group Market Cap Journey</h4>
+                    <p class="text-center text-slate-500 mb-6 max-w-3xl mx-auto">The chart below tracks the group's market capitalization, showing the sharp decline post-report and the subsequent strategic recovery.</p>
+                    <div class="chart-container">
+                        <canvas id="marketCapChart"></canvas>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section id="vindication" class="mb-16">
-             <h2 class="text-3xl font-bold text-center text-[#004369] mb-8">Comeback and Vindication</h2>
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                <div class="bg-white rounded-lg shadow-xl p-6 md:p-8">
-                    <h3 class="text-xl font-bold text-center text-[#004369] mb-4">Market Value Loss vs. Recovery</h3>
-                    <p class="text-center text-gray-600 mb-6">The bar chart illustrates the dramatic scale of the initial loss compared to the significantly narrowed loss after the group's strategic comeback, showcasing the effectiveness of their crisis management.</p>
-                     <div class="chart-container h-80">
-                        <canvas id="recoveryChart"></canvas>
-                    </div>
-                </div>
-                <div class="bg-white rounded-lg shadow-xl p-6 md:p-8">
-                    <h3 class="text-xl font-bold text-center text-[#004369] mb-6">Timeline to Shutdown</h3>
-                    <div class="relative border-l-4 border-[#004369] pl-8 space-y-12">
-                        <div class="timeline-item">
-                            <h4 class="font-bold text-[#004369]">Jan 2023</h4>
-                            <p class="text-gray-600">Hindenburg report is published, market rout begins.</p>
+            <section id="counteroffensive">
+                <h3 class="text-3xl font-bold text-center text-[#0B2A4A] mb-2">The Counteroffensive</h3>
+                <p class="text-center text-slate-500 mb-12 max-w-2xl mx-auto">Adani Group didn't just defend—it launched "Operation Zeppelin," a covert investigation to unmask the network behind the attack.</p>
+                <div class="bg-white p-6 md:p-8 rounded-lg shadow-xl">
+                    <div class="max-w-3xl mx-auto">
+                        <div class="flow-step">
+                            <div class="flow-icon bg-[#005A8D]">1</div>
+                            <h4 class="font-bold text-lg text-[#0B2A4A] mb-1 pt-1">Geopolitical Nexus</h4>
+                            <p>The report dropped just before a key $1.2B deal for Israel's Haifa Port. This timing led the Israeli establishment to suspect a "deliberate attempt" to undermine the deal and the India-Middle East-Europe Economic Corridor.</p>
                         </div>
-                        <div class="timeline-item">
-                            <h4 class="font-bold text-[#004369]">Aug 2024</h4>
-                            <p class="text-gray-600">SEBI completes most investigations and issues notice to Hindenburg.</p>
+                        <div class="flow-step">
+                            <div class="flow-icon bg-[#005A8D]">2</div>
+                            <h4 class="font-bold text-lg text-[#0B2A4A] mb-1 pt-1">Intelligence Mobilized</h4>
+                            <p>Adani's comeback was reportedly bolstered by assistance from an Israeli intelligence agency. Sources allege Mossad agents began monitoring Hindenburg and uncovered a complex international network.</p>
                         </div>
-                         <div class="timeline-item">
-                            <h4 class="font-bold text-[#004369]">Late 2024</h4>
-                            <p class="text-gray-600">Supreme Court deems Hindenburg report "unreliable."</p>
+                        <div class="flow-step">
+                            <div class="flow-icon bg-[#005A8D]">3</div>
+                            <h4 class="font-bold text-lg text-[#0B2A4A] mb-1 pt-1">The Oakbrook Terrace Infiltration</h4>
+                            <p>Spies allegedly infiltrated a premises in Oakbrook Terrace, Illinois, uncovering encrypted communications between asset managers and activists across the US, Europe, and India. This address was linked to the Indian Overseas Congress.</p>
                         </div>
-                        <div class="timeline-item">
-                            <h4 class="font-bold text-[#004369]">Jan 15, 2025</h4>
-                            <p class="text-gray-600">Hindenburg Research announces it is disbanding and ceasing all operations.</p>
+                        <div class="flow-step">
+                            <div class="flow-icon bg-[#005A8D]">4</div>
+                            <h4 class="font-bold text-lg text-[#0B2A4A] mb-1 pt-1">The Zeppelin Dossier</h4>
+                            <p>By October 2024, a 353-page dossier was compiled, detailing the alleged collaborative network. Adani assembled a team of attorneys and intelligence consultants, operating from a high-tech control room in Ahmedabad.</p>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <footer class="text-center mt-16 pt-8 border-t border-gray-300">
-            <p class="text-gray-600">This infographic visualizes the key events of the Adani-Hindenburg corporate conflict based on publicly available reports and analyses. The saga serves as a landmark case study in corporate resilience, strategic counter-intelligence, and the complex interplay between finance, media, and geopolitics.</p>
-        </footer>
+            <section id="verdict">
+                <h3 class="text-3xl font-bold text-center text-[#0B2A4A] mb-2">The Verdict</h3>
+                <p class="text-center text-slate-500 mb-12 max-w-2xl mx-auto">The battleground shifted to legal and regulatory arenas, where the narrative began to turn decisively in Adani's favor, culminating in Hindenburg's shutdown.</p>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-xl">
+                        <h4 class="text-xl font-bold text-[#0B2A4A] mb-4">Regulatory & Judicial Turning Points</h4>
+                        <ul class="space-y-4">
+                            <li class="pl-6 relative">
+                                <span class="absolute left-0 top-1 text-blue-600 font-bold">✓</span>
+                                <strong class="text-[#005A8D]">SEBI's Show-Cause Notice:</strong> India's regulator accused Hindenburg of "unfair profits" by sharing the report with a hedge fund pre-publication, shifting focus from Adani's alleged fraud to Hindenburg's methods.
+                            </li>
+                            <li class="pl-6 relative">
+                                <span class="absolute left-0 top-1 text-blue-600 font-bold">✓</span>
+                                <strong class="text-[#005A8D]">Supreme Court's Stance:</strong> India's highest court deemed the Hindenburg report "unreliable" and aimed at market influence, refusing to transfer the probe from SEBI and lending credibility to Adani's defense.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-xl">
+                        <h4 class="text-xl font-bold text-center text-[#0B2A4A] mb-4">Financial Rebound</h4>
+                        <p class="text-center text-slate-500 mb-6">This chart compares the staggering initial loss with the significantly narrowed loss after the group's strategic recovery and market stabilization.</p>
+                        <div class="chart-container h-80">
+                            <canvas id="recoveryChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+                 <div class="text-center mt-12 bg-slate-800 text-white p-8 rounded-lg shadow-xl">
+                    <h4 class="text-2xl font-bold mb-2">Hindenburg Research Shuts Down</h4>
+                    <p class="text-slate-300">On January 15, 2025, founder Nate Anderson announced the firm was disbanding, citing a personal desire for relief and to focus on his personal life, marking the end of a contentious chapter in financial activism.</p>
+                </div>
+            </section>
 
-    </div>
+        </div>
+    </main>
+
+    <footer class="text-center mt-16 py-8 border-t border-slate-200">
+        <p class="text-slate-500">This interactive report synthesizes information from the Adani-Hindenburg Saga report. All data is for illustrative purposes.</p>
+    </footer>
 
     <script>
         const wrapLabel = (label, maxLength) => {
-            if (label.length <= maxLength) {
+            if (typeof label !== 'string' || label.length <= maxLength) {
                 return label;
             }
             const words = label.split(' ');
@@ -215,7 +225,7 @@ draft = false
             lines.push(currentLine.trim());
             return lines;
         };
-        
+
         const sharedTooltipConfig = {
             plugins: {
                 tooltip: {
@@ -224,10 +234,9 @@ draft = false
                             const item = tooltipItems[0];
                             let label = item.chart.data.labels[item.dataIndex];
                             if (Array.isArray(label)) {
-                              return label.join(' ');
-                            } else {
-                              return label;
+                                return label.join(' ');
                             }
+                            return label;
                         }
                     }
                 }
@@ -238,14 +247,14 @@ draft = false
         new Chart(marketCapCtx, {
             type: 'line',
             data: {
-                labels: ['Early Jan 2023', 'Late Jan 2023 (Post-Report)', 'Feb 2023 (Lowest Point)', 'May 2024 (Recovery)'],
+                labels: ['Jan 2023 (Pre-Report)', 'Feb 2023 (Post-Report)', 'May 2023', 'Dec 2023', 'May 2024'],
                 datasets: [{
                     label: 'Adani Group Market Cap (Approx. in B USD)',
-                    data: [250, 100, 90, 217.5],
-                    borderColor: '#01949A',
-                    backgroundColor: 'rgba(1, 148, 154, 0.1)',
+                    data: [250, 90, 125, 180, 217.5],
+                    borderColor: '#005A8D',
+                    backgroundColor: 'rgba(0, 90, 141, 0.1)',
                     fill: true,
-                    tension: 0.1
+                    tension: 0.2
                 }]
             },
             options: {
@@ -253,11 +262,9 @@ draft = false
                 maintainAspectRatio: false,
                 scales: {
                     y: {
-                        beginAtZero: true,
+                        beginAtZero: false,
                         ticks: {
-                            callback: function(value) {
-                                return '$' + value + 'B';
-                            }
+                            callback: value => '$' + value + 'B'
                         }
                     }
                 },
@@ -269,13 +276,12 @@ draft = false
         new Chart(recoveryCtx, {
             type: 'bar',
             data: {
-                labels: [wrapLabel('Peak Market Cap Loss', 16), wrapLabel('Net Loss After Recovery (by May 2024)', 16)],
+                labels: [wrapLabel('Peak Market Cap Loss', 16), wrapLabel('Net Loss After Recovery', 16)],
                 datasets: [{
                     label: 'Value in Billion USD',
                     data: [150, 32.5],
-                    backgroundColor: ['#DB1F48', '#01949A'],
-                    borderColor: ['#DB1F48', '#01949A'],
-                    borderWidth: 1
+                    backgroundColor: ['#C0392B', '#2563eb'],
+                    borderRadius: 4
                 }]
             },
             options: {
@@ -286,20 +292,42 @@ draft = false
                     x: {
                         beginAtZero: true,
                         ticks: {
-                            callback: function(value) {
-                                return '$' + value + 'B';
-                            }
+                            callback: value => '$' + value + 'B'
                         }
                     }
                 },
                 plugins: {
-                    legend: {
-                        display: false
-                    },
+                    legend: { display: false },
                     ...sharedTooltipConfig.plugins
                 }
             }
         });
+        
+        // Smooth scroll for nav links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Active nav link on scroll
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-link');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    navLinks.forEach(link => {
+                        link.classList.toggle('active', link.getAttribute('href').substring(1) === entry.target.id);
+                    });
+                }
+            });
+        }, { rootMargin: "-50% 0px -50% 0px" });
+
+        sections.forEach(section => {
+            if(section.id) observer.observe(section);
+        });
+
     </script>
-</body>
-</html>
