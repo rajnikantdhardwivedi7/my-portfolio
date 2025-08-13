@@ -42,7 +42,7 @@ link = "https://keys.openpgp.org/vks/v1/by-fingerprint/7C155482814E95C40A2F22D50
 [[extra.top_projects]]
 name = "Rx Technologies"
 icon = "/assets/icons/rust.svg"
-link = "(https://rx-technologies.vercel.app/)"
+link = "https://rx-technologies.vercel.app/"
 calltoaction = "Visit Website"
 background = "#808080"
 color = "#fff"
