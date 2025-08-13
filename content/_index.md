@@ -359,7 +359,7 @@ icon = "/assets/icons/rust.svg"
 background = "#36b030"
 foreground = "#fff"
 content = """
-Rx Technologies is a corporate website for an innovative company pioneering AI-powered smart textile solutions. The platform presents the company’s mission, values, team, and industry impact while acting as a contact hub for potential clients, partners, and talent.
+[Rx Technologies](https://rx-technologies.vercel.app) is a corporate website for an innovative company pioneering AI-powered smart textile solutions. The platform presents the company’s mission, values, team, and industry impact while acting as a contact hub for potential clients, partners, and talent.
 Designed for clarity and trust-building, the site highlights the company’s journey from prototype development to enterprise-level textile integrations across healthcare, public safety, and industrial sectors.
 """
 
