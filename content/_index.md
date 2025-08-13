@@ -40,6 +40,17 @@ link = "https://keys.openpgp.org/vks/v1/by-fingerprint/7C155482814E95C40A2F22D50
 ################
 
 [[extra.top_projects]]
+name = "Rx Technologies"
+icon = "/assets/icons/rust.svg"
+link = "(https://rx-technologies.vercel.app/)"
+calltoaction = "Visit Website"
+background = "#0a74db"
+color = "#fff"
+description = """
+Built a responsive, high-performance company website for Rx Technologies, a leader in AI-powered smart textiles. Designed to communicate brand vision, showcase industry applications, and connect with global partners. Developed with modern frontend tools (Vite, React, TypeScript, Tailwind, shadcn/ui) and deployed on Vercel for instant scalability.
+"""
+
+[[extra.top_projects]]
 name = "DevConnect"
 icon = "/assets/icons/discord.svg"
 link = "https://devconnect-135a.onrender.com"
@@ -338,6 +349,18 @@ content = """
 I launched Resumos LEIC, a comprehensive data analytics platform that
 provides insights for future planning. The platform helps organizations make
 data-driven decisions with advanced visualization and reporting capabilities.
+"""
+
+[[extra.timeline]]
+title = "Rx Technologies"
+subtitle = "Innovative AI & Web Solutions for the Modern Era"
+date = "2025"
+icon = "/assets/icons/rust.svg"
+background = "#36b030"
+foreground = "#fff"
+content = """
+Rx Technologies is a corporate website for an innovative company pioneering AI-powered smart textile solutions. The platform presents the company’s mission, values, team, and industry impact while acting as a contact hub for potential clients, partners, and talent.
+Designed for clarity and trust-building, the site highlights the company’s journey from prototype development to enterprise-level textile integrations across healthcare, public safety, and industrial sectors.
 """
 
 +++
