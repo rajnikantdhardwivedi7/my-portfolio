@@ -44,7 +44,7 @@ name = "Rx Technologies"
 icon = "/assets/icons/rust.svg"
 link = "(https://rx-technologies.vercel.app/)"
 calltoaction = "Visit Website"
-background = "#0a74db"
+background = "#808080"
 color = "#fff"
 description = """
 Built a responsive, high-performance company website for Rx Technologies, a leader in AI-powered smart textiles. Designed to communicate brand vision, showcase industry applications, and connect with global partners. Developed with modern frontend tools (Vite, React, TypeScript, Tailwind, shadcn/ui) and deployed on Vercel for instant scalability.
