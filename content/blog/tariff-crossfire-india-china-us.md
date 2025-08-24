@@ -33,7 +33,7 @@ India’s **FY2024/25** trade with China hit fresh records:
 
 Much of India’s growth engines—**electronics, telecom gear, EV batteries, solar cells**—depend on Chinese components.
 
-![India–China Trade Snapshot (FY 2024/25)](static/images/india_china_trade_fy2025.png)
+![India–China Trade Snapshot (FY 2024/25)](images/india_china_trade_fy2025.png)
 
 > **Implication:** Any new tariff wave or export control that touches upstream Chinese inputs **propagates into Indian BOMs**, raising costs and delaying projects.
 
@@ -89,22 +89,3 @@ Much of India’s growth engines—**electronics, telecom gear, EV batteries, so
 6. **Compliance by design:** Track **origin, tariffs, and export-control classes** in your ERP; automate **country-of-origin** documentation.
 
 ---
-
-## 7) Visuals you can embed
-
-- **India–China trade snapshot (FY2024/25)**  
-  `![India–China Trade Snapshot](/images/india_china_trade_fy2025.png)`
-
-- **India iPhone export surge (approx.)**  
-  `![India iPhone Exports (Approx.)](/images/india_iphone_exports.png)`  
-  _Note: Uses media-reported \$17B for FY24/25; prior year shown as an estimate for visual context._
-
-> **How to use in Zola:** Put the PNGs in your site’s `static/images/` folder.
-
----
-
-## 8) Bottom line
-
-- **Short-run:** More **cost volatility** and **hardware lead-time pain**.  
-- **Medium-run:** India gains from **“China+1”** realignment—especially in **assembly/test, design centers,** and **GCCs**.  
-- **For professionals:** The winning combo is **semiconductor-adjacent depth** + **AI infrastructure** + **supply-chain literacy**. That’s where the work (and salaries) are going.
