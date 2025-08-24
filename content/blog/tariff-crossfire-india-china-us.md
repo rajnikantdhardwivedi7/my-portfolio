@@ -33,7 +33,7 @@ India’s **FY2024/25** trade with China hit fresh records:
 
 Much of India’s growth engines—**electronics, telecom gear, EV batteries, solar cells**—depend on Chinese components.
 
-![India–China Trade Snapshot (FY 2024/25)](/images/india_china_trade_fy2025.png)
+![India–China Trade Snapshot (FY 2024/25)](static/images/india_china_trade_fy2025.png)
 
 > **Implication:** Any new tariff wave or export control that touches upstream Chinese inputs **propagates into Indian BOMs**, raising costs and delaying projects.
 
