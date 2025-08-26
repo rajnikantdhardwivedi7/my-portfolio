@@ -1,5 +1,5 @@
 +++
-title = "openECSC 2024 Round 2 Write-up: GoSweeper"
+title = "openECSC 2025 Round 2 Write-up: GoSweeper"
 
 [taxonomies]
 tags = ["ctf", "ctf-writeup", "web", "golang", "xsleaks"]
