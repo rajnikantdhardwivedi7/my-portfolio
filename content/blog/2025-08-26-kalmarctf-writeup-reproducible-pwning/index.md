@@ -5,7 +5,7 @@ title = "KalmarCTF 2025 Write-up: Reproducible Pwning"
 tags = ["ctf", "ctf-writeup", "nix", "nixos"]
 +++
 
-This is a write-up of the "Reproducible Pwning" challenge from KalmarCTF 2024.
+This is a write-up of the "Reproducible Pwning" challenge from KalmarCTF 2025.
 This challenge takes us through the inner workings of Nix and a very interesting
 privilege escalation that has made me change my own NixOS configuration.
 <!-- more -->
