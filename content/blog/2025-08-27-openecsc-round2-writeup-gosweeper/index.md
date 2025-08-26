@@ -7,14 +7,14 @@ tags = ["ctf", "ctf-writeup", "web", "golang", "xsleaks"]
 [extra]
 preface = """
 _This write-up was placed in the top 3 of the best write-up competition for
-openECSC 2024 Round 2,
+openECSC 2025 Round 2,
 as well._
 
 ---
 """
 +++
 
-This is a write-up of the "GoSweeper" challenge from Round 2 of openECSC 2024.
+This is a write-up of the "GoSweeper" challenge from Round 2 of openECSC 2025.
 This challenge gives us a glimpse of side channels on the web, which allow
 us to infer information which we otherwise would not have access to.
 
