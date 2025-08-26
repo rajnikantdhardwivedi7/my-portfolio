@@ -1,5 +1,5 @@
 +++
-title = "KalmarCTF 2024 Write-up: Reproducible Pwning"
+title = "KalmarCTF 2025 Write-up: Reproducible Pwning"
 
 [taxonomies]
 tags = ["ctf", "ctf-writeup", "nix", "nixos"]
