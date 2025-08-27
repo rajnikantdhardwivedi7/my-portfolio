@@ -146,10 +146,3 @@ systemctl start immich-machine-learning.service
 In this post, we took a look at migrating an existing Immich deployment from Docker
 to the NixOS module, assuming that the database is already being handled
 by NixOS.
-
-[immich-docker]: https://github.com/diogotcorreia/dotfiles/blob/f178ca8f9f6465c9dbd6054be61991d249758022/hosts/hera/immich.nix
-[migration-pr]: https://github.com/NixOS/nixpkgs/pull/344300
-[perform backups]: https://immich.app/docs/administration/backup-and-restore/
-[immich-module]: https://search.nixos.org/options?query=services.immich
-[diff-commit]: https://github.com/diogotcorreia/dotfiles/commit/b89ad11e06aa82c810adb1f51b33cf151c84fe8f
-[`regexp_replace`]: https://www.postgresql.org/docs/16/functions-matching.html
