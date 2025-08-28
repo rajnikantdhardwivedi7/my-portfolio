@@ -1,5 +1,6 @@
 +++
 title = "The Nexus of Markets, Regulation, and Power: An In-Depth Analysis of the Nazara Affair"
+date = 2025-08-28
 
 [taxonomies]
 tags = ["insider trading", "sebi", "regulation", "nazara", "sysadmin"]
