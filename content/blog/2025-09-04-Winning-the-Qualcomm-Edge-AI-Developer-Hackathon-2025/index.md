@@ -94,7 +94,7 @@ Winning was incredible, but for me, the biggest takeaways were:
 
 And of course, the medal itself:  
 
-![Hackathon Medal Closeup](Hackathonwin.png)  
+![Hackathon Medal Closeup](medalshot.png)  
 
 It’s not just a trophy—it’s a reminder that innovation can be fun, messy, and deeply rewarding all at once.  
 
