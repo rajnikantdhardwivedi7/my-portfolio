@@ -17,7 +17,7 @@ The hackathon kicked off on **4th September 2025** in Lucknow. From the moment I
 
 For me, the entry badge wasn’t just a piece of plastic—it was a ticket into a battlefield of innovation. And of course, I also had my eyes on that shiny medal waiting at the finish line.  
 
-![Qualcomm Hackathon Medal and ID](/Hackathon%20win.png)  
+![Qualcomm Hackathon Medal and ID](/Hackathonwin.png)  
 
 ---
 
@@ -94,7 +94,7 @@ Winning was incredible, but for me, the biggest takeaways were:
 
 And of course, the medal itself:  
 
-![Hackathon Medal Closeup](/Hackathon%20win.png)  
+![Hackathon Medal Closeup](/Hackathonwin.png)  
 
 It’s not just a trophy—it’s a reminder that innovation can be fun, messy, and deeply rewarding all at once.  
 
