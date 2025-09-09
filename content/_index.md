@@ -363,4 +363,14 @@ content = """
 Designed for clarity and trust-building, the site highlights the company’s journey from prototype development to enterprise-level textile integrations across healthcare, public safety, and industrial sectors.
 """
 
+[[extra.timeline]]
+title = "AI Mockup Pro"
+subtitle = "From Wireframe to App Screen in Seconds"
+date = "2025"
+icon = "/assets/icons/java.svg"
+background = "#007396"
+foreground = "#fff"
+content = """
+[AI Mockup Pro](https://ai-mockup-pro.vercel.app/) is a design tool that lets you turn wireframes into polished app screen designs instantly. You can start from scratch, use reference images, or follow custom design guidelines to generate production-ready UI screens with AI
+"""
 +++
