@@ -40,6 +40,17 @@ link = "https://keys.openpgp.org/vks/v1/by-fingerprint/7C155482814E95C40A2F22D50
 ################
 
 [[extra.top_projects]]
+name = "AI Incident Triage Assistant (Streamlit)"
+icon = "/assets/icons/streamlit.svg"
+link = "https://github.com/rajnikantdhardwivedi7/streamlit"
+calltoaction = "Visit Website"
+background = "#000080"
+color = "#fff"
+description = """
+This project combines machine learning and DevOps automation to streamline incident management. Built with Python, Streamlit, and Docker, it classifies errors into five key categories, matches them with historical fixes, and provides instant, actionable solutions. The live dashboard offers real-time log analysis, system health insights, and performance monitoring, while GitHub Actions handles automated testing and CI/CD. Fully containerized with Docker, the tool is ready for local or cloud deployment, making it a practical assistant for modern DevOps workflows.
+"""
+
+[[extra.top_projects]]
 name = "Rx Technologies"
 icon = "/assets/icons/rust.svg"
 link = "https://rx-technologies.vercel.app/"
@@ -372,5 +383,16 @@ background = "#007396"
 foreground = "#fff"
 content = """
 [AI Mockup Pro](https://ai-mockup-pro.vercel.app/) is a design tool that lets you turn wireframes into polished app screen designs instantly. You can start from scratch, use reference images, or follow custom design guidelines to generate production-ready UI screens with AI
+"""
+
+[[extra.timeline]]
+title = "AI Incident Triage Assistant (Streamlit)"
+subtitle = "An intelligent DevOps companion that classifies, analyzes, and resolves system incidents in real time."
+date = "2025"
+icon = "/assets/icons/streamlit.svg"
+background = "#000080"
+foreground = "#fff"
+content = """
+[AI Incident Triage Assistant (Streamlit)](https://github.com/rajnikantdhardwivedi7/streamlit) is a machine learning–powered DevOps tool that helps engineers handle system errors faster. It automatically classifies incidents like dependency errors, timeouts, syntax bugs, config issues, and infrastructure failures with high accuracy. Using similarity search and a built-in knowledge base, it suggests solutions from past cases, reducing resolution time. The Streamlit dashboard provides real-time log analysis, health monitoring, and trend insights, while Docker ensures smooth deployment and GitHub Actions manages CI/CD automation.
 """
 +++
